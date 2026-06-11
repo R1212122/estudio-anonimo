@@ -19,14 +19,14 @@ ships three different things at once, and you can land on whichever fits you:
 | 🎨 **Designer** building premium sites | How to apply editorial-magazine language (1/3 + 2/3 split, hairline seam, oxblood accent) without a design system | [`docs/walkthrough.md`](./docs/walkthrough.md) § "Three variants, one decision" |
 | 🧑‍💻 **Frontend engineer** who can't crack "the high-end look" | A single 18 KB `index.html` with all tokens centralized in `:root` and every number explained in taste-skill annotations | [`index.html`](./index.html) + [`docs/walkthrough.md`](./docs/walkthrough.md) § "Reading the CSS" |
 | 🤖 **AI engineer** whose LLM output tastes "AI-ish" | A 50-item pre-flight checklist that *removes* the AI tells (no Inter default, no AI purple, no 3-equal cards, no Jane Doe, no centered hero) | [`docs/preflight-checker.md`](./docs/preflight-checker.md) |
-| 🧠 **AI researcher** looking at multi-agent traces | A full 7-event trace: brief → Lio scheduler → Pixel (subagent) → two-stage review → final delivery. Convertible to JSONL for fine-tuning | [`docs/ai-trace.md`](./docs/ai-trace.md) + [`datasets/estudio-anonimo-traces.jsonl`](./datasets/estudio-anonimo-traces.jsonl) |
+| 🧠 **AI researcher** looking at multi-agent traces | A full 7-event trace: brief → Lio scheduler → Pixel (subagent) → two-stage review → final delivery. Convertible to JSONL for fine-tuning | [`docs/ai-trace.md`](./docs/ai-trace.md) + [`datasets/estudio-anonimo-traces.jsonl`](./datasets/estudio-anonimo-traces.jsonl) (also published to [HuggingFace](https://huggingface.co/datasets/Fnn123/estudio-anonimo-traces)) |
 
 **1-minute orientation by goal:**
 
 - *"I want to copy the look"* → copy `index.html`, swap `images/`, change 5 tokens in `:root`.
 - *"I want to learn the rules"* → read [`docs/preflight-checker.md`](./docs/preflight-checker.md) (50 checks).
 - *"I want to learn the process"* → read [`docs/walkthrough.md`](./docs/walkthrough.md) (7 design stories).
-- *"I want training data"* → read [`docs/ai-trace.md`](./docs/ai-trace.md) + load the JSONL.
+- *"I want training data"* → read [`docs/ai-trace.md`](./docs/ai-trace.md) + load the JSONL. **The dataset is also live on [HuggingFace](https://huggingface.co/datasets/Fnn123/estudio-anonimo-traces) as a downloadable resource — no HF account needed to fetch.**
 
 ---
 

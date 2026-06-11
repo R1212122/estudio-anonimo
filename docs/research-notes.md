@@ -116,4 +116,6 @@ A model fine-tuned on this corpus should: (a) produce a tea landing page with *n
 
 The dataset is **open and extensible**. If you fork it, re-run the workflow, and add new traces, please open a PR. The single most valuable contribution you can make is **N+1** — one more task in the same shape. A corpus of 100 such traces would be a meaningful research contribution; a corpus of 1,000 would be a *finetune* contribution.
 
-If you publish a paper using this dataset, please cite the repo and link to it from your paper. The DOI will be assigned when the dataset is uploaded to HuggingFace (planned for a future PR).
+**The dataset is live on HuggingFace:** [huggingface.co/datasets/Fnn123/estudio-anonimo-traces](https://huggingface.co/datasets/Fnn123/estudio-anonimo-traces) (or its mirror: [hf-mirror.com/datasets/Fnn123/estudio-anonimo-traces](https://hf-mirror.com/datasets/Fnn123/estudio-anonimo-traces)). Anyone can fetch it with `huggingface_hub` or via the web — no account required.
+
+If you publish a paper using this dataset, please cite the repo and link to it from your paper.
