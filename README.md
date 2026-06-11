@@ -7,6 +7,29 @@ restrained motion, and typography that breathes.
 
 ![Preview](./preview.png)
 
+---
+
+## 📚 Learn from this repo
+
+This is not just a landing page — it's a **teaching artifact**. The same repository
+ships three different things at once, and you can land on whichever fits you:
+
+| You are a… | You'll learn | Open this first |
+|------------|--------------|-----------------|
+| 🎨 **Designer** building premium sites | How to apply editorial-magazine language (1/3 + 2/3 split, hairline seam, oxblood accent) without a design system | [`docs/walkthrough.md`](./docs/walkthrough.md) § "Three variants, one decision" |
+| 🧑‍💻 **Frontend engineer** who can't crack "the high-end look" | A single 18 KB `index.html` with all tokens centralized in `:root` and every number explained in taste-skill annotations | [`index.html`](./index.html) + [`docs/walkthrough.md`](./docs/walkthrough.md) § "Reading the CSS" |
+| 🤖 **AI engineer** whose LLM output tastes "AI-ish" | A 50-item pre-flight checklist that *removes* the AI tells (no Inter default, no AI purple, no 3-equal cards, no Jane Doe, no centered hero) | [`docs/preflight-checker.md`](./docs/preflight-checker.md) |
+| 🧠 **AI researcher** looking at multi-agent traces | A full 7-event trace: brief → Lio scheduler → Pixel (subagent) → two-stage review → final delivery. Convertible to JSONL for fine-tuning | [`docs/ai-trace.md`](./docs/ai-trace.md) + [`datasets/estudio-anonimo-traces.jsonl`](./datasets/estudio-anonimo-traces.jsonl) |
+
+**1-minute orientation by goal:**
+
+- *"I want to copy the look"* → copy `index.html`, swap `images/`, change 5 tokens in `:root`.
+- *"I want to learn the rules"* → read [`docs/preflight-checker.md`](./docs/preflight-checker.md) (50 checks).
+- *"I want to learn the process"* → read [`docs/walkthrough.md`](./docs/walkthrough.md) (7 design stories).
+- *"I want training data"* → read [`docs/ai-trace.md`](./docs/ai-trace.md) + load the JSONL.
+
+---
+
 ## About
 
 This is the **Autumn Edition 2026** hero/landing page for *Estudio Anonimo*, a fictional
@@ -15,9 +38,9 @@ small studio. The design language takes cues from real high-end furniture brands
 photography of Apartamento / AnOther Magazine.
 
 The full design rationale, three design alternatives, and a 50-point pre-flight check
-live in the source task report — see `prompts/prompts.md` for the AI image prompts
-used to generate the supporting visuals, and the `outbox/` history of the original
-task for the complete design process.
+live in [`docs/walkthrough.md`](./docs/walkthrough.md) and
+[`docs/preflight-checker.md`](./docs/preflight-checker.md) — both written as teaching
+material, not internal docs.
 
 ## Design at a glance
 
@@ -46,6 +69,12 @@ estudio-anonimo/
 ├── prompts/
 │   ├── prompts.md          ← 7 English + Chinese AI image prompts (MJ/DALL-E/可灵)
 │   └── fetch-images.py     ← Unsplash downloader used to source the photos
+├── docs/                   ← 📚 teaching material (start here if you're learning)
+│   ├── walkthrough.md      ← 7 design stories: how each pixel was decided
+│   ├── preflight-checker.md← 50-item anti-AI-tells checklist with examples
+│   └── ai-trace.md         ← multi-agent trace, formatted for AI training
+├── datasets/
+│   └── estudio-anonimo-traces.jsonl  ← 7-event agent trace, ready for fine-tuning
 ├── preview.png             ← Full-page screenshot
 ├── LICENSE                 ← MIT
 └── README.md
